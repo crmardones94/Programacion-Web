@@ -1,0 +1,74 @@
+.container{
+    background-color: green;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+
+.grid-main{
+    background-color: aquamarine;
+    width: 60%;
+
+}
+
+.grid-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(auto,1fr)); /*repetimos el largo para todas las casillas*/
+    grid-template-rows:auto auto auto ;/*toma el alto dependiendo del contenido*/
+    border: solid 1px #000;
+}
+
+.item{
+    width: 0 auto;
+    height: 80px;
+    border: solid 1px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caj2,.caj3,.caj4,.caj6,.caj7,.caj8 {
+     
+    background-image: url(/bici1.jpg);/*incruta imagen como fondo*/
+    background-size: contain; /*el tamaño de la imagen va ser igual al largo del cuadro*/
+    background-repeat: no-repeat; /*no repite la imagen*/
+    background-position: center; /*centra la imagen de fondo*/
+    padding: 5px;
+    margin: 5px;
+}
+
+/*repetir por cada casilla que exista*/
+.grid-items .item:nth-of-type(2){
+    background-image: url(/rueda.png); /*cambia el fondo*/
+}
+
+
+.caj1{
+    grid-area: 1/1/2/4;/*Barra principal toma el largo total de la columna 1 a la 3*/
+}
+
+.caj5{
+
+    grid-area: 3/1/3/4;/*tercera barra toma el largo total de la columna 1 a la 3*/
+    height: 250px;
+    width: 80%;
+    margin: 0 auto;
+    background-image: url(/bici1.jpg);    
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.caj5 .cajachica{
+    width: 150px;
+    height: 100px;
+    margin-left: 70%;
+    margin-bottom: 20%;
+    border: solid 1px #000;
+    background-color: azure;
+    background-image: url(/bici1.jpg);    
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+
+}
