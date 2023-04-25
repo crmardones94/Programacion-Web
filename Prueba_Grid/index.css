@@ -30,7 +30,7 @@
 
 .caj2,.caj3,.caj4,.caj6,.caj7,.caj8 {
      
-    background-image: url(/Prueba_Grid/bici1.jpg);/*incruta imagen como fondo*/
+    background-image: url(/Prueba\ Grid/bici1);/*incruta imagen como fondo*/
     background-size: contain; /*el tamaño de la imagen va ser igual al largo del cuadro*/
     background-repeat: no-repeat; /*no repite la imagen*/
     background-position: center; /*centra la imagen de fondo*/
@@ -40,7 +40,7 @@
 
 /*repetir por cada casilla que exista*/
 .grid-items .item:nth-of-type(2){
-    background-image: url(/Prueba_Grid/rueda.png); /*cambia el fondo*/
+    background-image: url(/rueda.png); /*cambia el fondo*/
 }
 
 
